@@ -22,4 +22,4 @@ This root site at `https://ooodnakov.github.io/` indexes the standalone VitePres
 - [`/voice-drop/`](https://ooodnakov.github.io/voice-drop/) — VoiceDrop (EN + RU)
 - [`/windowping/`](https://ooodnakov.github.io/windowping/) — windowping
 - [`/zsh-fzf-unified/`](https://ooodnakov.github.io/zsh-fzf-unified/) — zsh-fzf-unified
-- [`/quantum_2048/`](https://ooodnakov.github.io/quantum_2048/) — Quantum 2048
+- [`/ooodnakov-config/`](https://ooodnakov.github.io/ooodnakov-config/) — ooodnakov-config

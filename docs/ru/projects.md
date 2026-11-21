@@ -9,7 +9,7 @@
 | **VoiceDrop** | Portable-утилита отправки файлов в Telegram (Rust + Tauri + Telethon): голосовые, кружочки и документы | [Доки (RU)](https://ooodnakov.github.io/voice-drop/ru/) · [Docs (EN)](https://ooodnakov.github.io/voice-drop/) · [GitHub](https://github.com/ooodnakov/voice-drop) · [Релизы](https://github.com/ooodnakov/voice-drop/releases/latest) |
 | **windowping** | Демон и CLI на чистом Python 3.11+ (stdlib) для автоматического старта 5-часовых окон лимитов в Codex, Command Code, GLM, Claude Code, Kimi и MiniMax | [Доки](https://ooodnakov.github.io/windowping/) · [GitHub](https://github.com/ooodnakov/windowping) · [PyPI](https://pypi.org/project/windowping/) |
 | **zsh-fzf-unified** | Единый плагин zsh для всех поверхностей fzf: `Ctrl-R`, `Ctrl-T`, `Alt-C`, `Ctrl-G` ripgrep, `fzf-tab` и гибридные стрелки | [Доки](https://ooodnakov.github.io/zsh-fzf-unified/) · [GitHub](https://github.com/ooodnakov/zsh-fzf-unified) |
-| **Quantum 2048** | Интерактивная веб-игра Quantum 2048 | [Играть](https://ooodnakov.github.io/quantum_2048/) · [GitHub](https://github.com/ooodnakov/quantum_2048) |
+| **ooodnakov-config** | Воспроизводимые dotfiles для Linux, Windows и macOS с единым CLI `oooconf` (`o`) | [Доки](https://ooodnakov.github.io/ooodnakov-config/) · [GitHub](https://github.com/ooodnakov/ooodnakov-config) |
 | **my_website** | Личный сайт и резюме | [dnakov.ooo](https://dnakov.ooo) · [GitHub](https://github.com/ooodnakov/my_website) |
 
 ## AI-инструменты и автоматизация
@@ -24,7 +24,7 @@
 
 | Проект | Стек | Описание | Ссылки |
 |---|---|---|---|
-| **ooodnakov-config** | Python, Shell | Воспроизводимые dotfiles для Linux, Windows и macOS с единым CLI `oooconf` (`o`) | [GitHub](https://github.com/ooodnakov/ooodnakov-config) |
+| **ooodnakov-config** | Python, Shell | Воспроизводимые dotfiles для Linux, Windows и macOS с единым CLI `oooconf` (`o`) | [Доки](https://ooodnakov.github.io/ooodnakov-config/) · [GitHub](https://github.com/ooodnakov/ooodnakov-config) |
 | **zsh-fzf-unified** | Shell | Единый zsh-плагин для fzf, заменяющий `zsh-fzf-history-search`, отдельный `fzf-tab` и ручные биндинги `fzf --zsh` | [Доки](https://ooodnakov.github.io/zsh-fzf-unified/) · [GitHub](https://github.com/ooodnakov/zsh-fzf-unified) |
 | **noctalia-handy** | Luau | Интеграция офлайн speech-to-text Handy в панель Noctalia: статус, диктовка, история и выбор моделей | [GitHub](https://github.com/ooodnakov/noctalia-handy) · [Релизы](https://github.com/ooodnakov/noctalia-handy/releases/latest) |
 | **omz.yazi** | Lua | Отображение актуального промпта Oh My Zsh в шапке Yazi | [GitHub](https://github.com/ooodnakov/omz.yazi) · [Релизы](https://github.com/ooodnakov/omz.yazi/releases/latest) |
@@ -36,7 +36,6 @@
 | **voice-drop** | Rust, Tauri, Python | Portable-окно отправки файлов в Telegram в эстетике печатной накладной | [Доки (RU)](https://ooodnakov.github.io/voice-drop/ru/) · [GitHub](https://github.com/ooodnakov/voice-drop) |
 | **alioss** | Kotlin, Jetpack Compose | Офлайн-игра Alias для Android без рекламы, аккаунтов и трекеров | [GitHub](https://github.com/ooodnakov/alioss) · [Релизы](https://github.com/ooodnakov/alioss/releases/latest) |
 | **alioss-site** | TypeScript, Next.js | Портал и галерея колод для Alioss | [GitHub](https://github.com/ooodnakov/alioss-site) |
-| **quantum_2048** | JavaScript | Веб-игра Quantum 2048 | [Играть](https://ooodnakov.github.io/quantum_2048/) · [GitHub](https://github.com/ooodnakov/quantum_2048) |
 | **minecraft_modpacks_translations** | Python | Переводы квестов в модпаках Minecraft (Cube Warper 1.13) | [GitHub](https://github.com/ooodnakov/minecraft_modpacks_translations) |
 
 ## Исследования и учёба

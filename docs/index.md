@@ -32,17 +32,16 @@ features:
     details: One zsh plugin owning Ctrl-R history, Ctrl-T / Alt-C pickers, Ctrl-G ripgrep, vendored fzf-tab, and hybrid arrows.
     link: https://ooodnakov.github.io/zsh-fzf-unified/
     linkText: Open Docs
-  - title: Quantum 2048
-    details: Interactive Quantum 2048 web game hosted on GitHub Pages.
-    link: https://ooodnakov.github.io/quantum_2048/
-    linkText: Play Now
+  - title: ooodnakov-config
+    details: Reproducible personal dotfiles for Linux, Windows, and macOS machines, driven by the oooconf (o) CLI.
+    link: https://ooodnakov.github.io/ooodnakov-config/
+    linkText: Open Docs
 ---
 
 ## Other Public Repositories
 
 | Project | Stack | Summary | Links |
 |---|---|---|---|
-| **ooodnakov-config** | Python, Shell | Reproducible personal dotfiles for Linux, Windows, and macOS machines driven by the `oooconf` (`o`) CLI | [GitHub](https://github.com/ooodnakov/ooodnakov-config) |
 | **telegram_meme_autoposter** | Python, TypeScript | Telegram meme channel ingestion, processing, moderation dashboard (FastAPI + React SPA), and publishing | [GitHub](https://github.com/ooodnakov/telegram_meme_autoposter) · [Wiki](https://github.com/ooodnakov/telegram_meme_autoposter/wiki) |
 | **dndtranscribe** | Python | Local Russian transcription, speaker labeling (Whisper, sherpa-onnx, pyannote), and conservative LLM cleanup | [GitHub](https://github.com/ooodnakov/dndtranscribe) |
 | **noctalia-handy** | Luau | Offline speech-to-text integration for Noctalia: bar status, dictation controls, and transcript history | [GitHub](https://github.com/ooodnakov/noctalia-handy) |

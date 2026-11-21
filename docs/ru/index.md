@@ -32,17 +32,16 @@ features:
     details: "Единый плагин zsh для fzf: поиск по истории Ctrl-R, пикеры Ctrl-T / Alt-C, Ctrl-G ripgrep, fzf-tab и гибридные стрелки."
     link: https://ooodnakov.github.io/zsh-fzf-unified/
     linkText: Открыть доки
-  - title: Quantum 2048
-    details: Веб-игра Quantum 2048 на GitHub Pages.
-    link: https://ooodnakov.github.io/quantum_2048/
-    linkText: Открыть
+  - title: ooodnakov-config
+    details: "Воспроизводимые dotfiles для Linux, Windows и macOS с единым CLI oooconf (o)."
+    link: https://ooodnakov.github.io/ooodnakov-config/
+    linkText: Открыть доки
 ---
 
 ## Другие открытые репозитории
 
 | Проект | Стек | Описание | Ссылки |
 |---|---|---|---|
-| **ooodnakov-config** | Python, Shell | Воспроизводимые dotfiles для Linux, Windows и macOS с CLI `oooconf` (`o`) | [GitHub](https://github.com/ooodnakov/ooodnakov-config) |
 | **telegram_meme_autoposter** | Python, TypeScript | Платформа автопостинга в Telegram: сбор из источников, обработка, модерация через FastAPI + React SPA | [GitHub](https://github.com/ooodnakov/telegram_meme_autoposter) · [Wiki](https://github.com/ooodnakov/telegram_meme_autoposter/wiki) |
 | **dndtranscribe** | Python | Локальная транскрибация русской речи и разделение спикеров (Whisper, sherpa-onnx, pyannote, LM Studio) | [GitHub](https://github.com/ooodnakov/dndtranscribe) |
 | **noctalia-handy** | Luau | Интеграция офлайн-диктовки Handy в панель Noctalia | [GitHub](https://github.com/ooodnakov/noctalia-handy) |
