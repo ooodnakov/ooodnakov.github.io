@@ -38,15 +38,59 @@ features:
     linkText: Open Docs
 ---
 
+<script setup>
+const otherRepos = [
+  {
+    name: 'telegram_meme_autoposter',
+    stack: 'Python, TypeScript',
+    description:
+      'Telegram meme channel ingestion, processing, moderation dashboard (FastAPI + React SPA), and publishing',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/telegram_meme_autoposter' },
+      { label: 'Wiki', href: 'https://github.com/ooodnakov/telegram_meme_autoposter/wiki' },
+    ],
+  },
+  {
+    name: 'dndtranscribe',
+    stack: 'Python',
+    description:
+      'Local Russian transcription, speaker labeling (Whisper, sherpa-onnx, pyannote), and conservative LLM cleanup',
+    links: [{ label: 'GitHub', href: 'https://github.com/ooodnakov/dndtranscribe' }],
+  },
+  {
+    name: 'noctalia-handy',
+    stack: 'Luau',
+    description:
+      'Offline speech-to-text integration for Noctalia: bar status, dictation controls, and transcript history',
+    links: [{ label: 'GitHub', href: 'https://github.com/ooodnakov/noctalia-handy' }],
+  },
+  {
+    name: 'omz.yazi',
+    stack: 'Lua',
+    description: "Oh My Zsh prompt rendered in Yazi's header",
+    links: [{ label: 'GitHub', href: 'https://github.com/ooodnakov/omz.yazi' }],
+  },
+  {
+    name: 'alioss & alioss-site',
+    stack: 'Kotlin, TypeScript',
+    description:
+      'Local-only pass-and-play Alias party game for Android + Next.js community deck portal',
+    links: [
+      { label: 'App', href: 'https://github.com/ooodnakov/alioss' },
+      { label: 'Site', href: 'https://github.com/ooodnakov/alioss-site' },
+    ],
+  },
+  {
+    name: 'minecraft_modpacks_translations',
+    stack: 'Python',
+    description: 'Russian quest translations for Minecraft modpacks (Cube Warper 1.13)',
+    links: [{ label: 'GitHub', href: 'https://github.com/ooodnakov/minecraft_modpacks_translations' }],
+  },
+]
+</script>
+
 ## Other Public Repositories
 
-| Project | Stack | Summary | Links |
-|---|---|---|---|
-| **telegram_meme_autoposter** | Python, TypeScript | Telegram meme channel ingestion, processing, moderation dashboard (FastAPI + React SPA), and publishing | [GitHub](https://github.com/ooodnakov/telegram_meme_autoposter) · [Wiki](https://github.com/ooodnakov/telegram_meme_autoposter/wiki) |
-| **dndtranscribe** | Python | Local Russian transcription, speaker labeling (Whisper, sherpa-onnx, pyannote), and conservative LLM cleanup | [GitHub](https://github.com/ooodnakov/dndtranscribe) |
-| **noctalia-handy** | Luau | Offline speech-to-text integration for Noctalia: bar status, dictation controls, and transcript history | [GitHub](https://github.com/ooodnakov/noctalia-handy) |
-| **omz.yazi** | Lua | Oh My Zsh prompt rendered in Yazi's header | [GitHub](https://github.com/ooodnakov/omz.yazi) |
-| **alioss** & **alioss-site** | Kotlin, TypeScript | Local-only pass-and-play Alias party game for Android + Next.js community deck portal | [App](https://github.com/ooodnakov/alioss) · [Site](https://github.com/ooodnakov/alioss-site) |
-| **minecraft_modpacks_translations** | Python | Russian quest translations for Minecraft modpacks (Cube Warper 1.13) | [GitHub](https://github.com/ooodnakov/minecraft_modpacks_translations) |
+<RepoGrid :items="otherRepos" />
 
 See the full categorized list on [Projects & Docs](/projects).

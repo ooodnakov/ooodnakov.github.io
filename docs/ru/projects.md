@@ -1,46 +1,200 @@
+<script setup>
+const hostedDocs = [
+  {
+    name: 'VoiceDrop',
+    description:
+      'Portable-утилита отправки файлов в Telegram (Rust + Tauri + Telethon): голосовые, кружочки и документы',
+    links: [
+      { label: 'Доки (RU)', href: 'https://ooodnakov.github.io/voice-drop/ru/' },
+      { label: 'Docs (EN)', href: 'https://ooodnakov.github.io/voice-drop/' },
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/voice-drop' },
+      { label: 'Релизы', href: 'https://github.com/ooodnakov/voice-drop/releases/latest' },
+    ],
+  },
+  {
+    name: 'windowping',
+    description:
+      'Демон и CLI на чистом Python 3.11+ (stdlib) для автоматического старта 5-часовых окон лимитов в Codex, Command Code, GLM, Claude Code, Kimi и MiniMax',
+    links: [
+      { label: 'Доки', href: 'https://ooodnakov.github.io/windowping/' },
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/windowping' },
+      { label: 'PyPI', href: 'https://pypi.org/project/windowping/' },
+    ],
+  },
+  {
+    name: 'zsh-fzf-unified',
+    description:
+      'Единый плагин zsh для всех поверхностей fzf: Ctrl-R, Ctrl-T, Alt-C, Ctrl-G ripgrep, fzf-tab и гибридные стрелки',
+    links: [
+      { label: 'Доки', href: 'https://ooodnakov.github.io/zsh-fzf-unified/' },
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/zsh-fzf-unified' },
+    ],
+  },
+  {
+    name: 'ooodnakov-config',
+    description:
+      'Воспроизводимые dotfiles для Linux, Windows и macOS с единым CLI oooconf (o)',
+    links: [
+      { label: 'Доки', href: 'https://ooodnakov.github.io/ooodnakov-config/' },
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/ooodnakov-config' },
+    ],
+  },
+  {
+    name: 'my_website',
+    description: 'Личный сайт и резюме',
+    links: [
+      { label: 'dnakov.ooo', href: 'https://dnakov.ooo' },
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/my_website' },
+    ],
+  },
+]
+
+const aiTools = [
+  {
+    name: 'windowping',
+    stack: 'Python',
+    description:
+      'Менеджер 5-часовых окон с live-карточкой в Telegram, тихими часами, статистикой, doctor и systemd-watchdog',
+    links: [
+      { label: 'Доки', href: 'https://ooodnakov.github.io/windowping/' },
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/windowping' },
+    ],
+  },
+  {
+    name: 'dndtranscribe',
+    stack: 'Python',
+    description:
+      'Локальная транскрибация русской речи и диаризация для записей настольных сессий (Whisper, sherpa-onnx, pyannote, LM Studio)',
+    links: [{ label: 'GitHub', href: 'https://github.com/ooodnakov/dndtranscribe' }],
+  },
+  {
+    name: 'telegram_meme_autoposter',
+    stack: 'Python, TypeScript',
+    description:
+      'Агрегация медиа из Telegram-каналов, дедупликация, водяные знаки, админ-панель (FastAPI + React SPA) и отложенный постинг',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/telegram_meme_autoposter' },
+      { label: 'Wiki', href: 'https://github.com/ooodnakov/telegram_meme_autoposter/wiki' },
+    ],
+  },
+]
+
+const dotfilesPlugins = [
+  {
+    name: 'ooodnakov-config',
+    stack: 'Python, Shell',
+    description:
+      'Воспроизводимые dotfiles для Linux, Windows и macOS с единым CLI oooconf (o)',
+    links: [
+      { label: 'Доки', href: 'https://ooodnakov.github.io/ooodnakov-config/' },
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/ooodnakov-config' },
+    ],
+  },
+  {
+    name: 'zsh-fzf-unified',
+    stack: 'Shell',
+    description:
+      'Единый zsh-плагин для fzf, заменяющий zsh-fzf-history-search, отдельный fzf-tab и ручные биндинги fzf --zsh',
+    links: [
+      { label: 'Доки', href: 'https://ooodnakov.github.io/zsh-fzf-unified/' },
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/zsh-fzf-unified' },
+    ],
+  },
+  {
+    name: 'noctalia-handy',
+    stack: 'Luau',
+    description:
+      'Интеграция офлайн speech-to-text Handy в панель Noctalia: статус, диктовка, история и выбор моделей',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/noctalia-handy' },
+      { label: 'Релизы', href: 'https://github.com/ooodnakov/noctalia-handy/releases/latest' },
+    ],
+  },
+  {
+    name: 'omz.yazi',
+    stack: 'Lua',
+    description: 'Отображение актуального промпта Oh My Zsh в шапке Yazi',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/omz.yazi' },
+      { label: 'Релизы', href: 'https://github.com/ooodnakov/omz.yazi/releases/latest' },
+    ],
+  },
+]
+
+const appsGames = [
+  {
+    name: 'voice-drop',
+    stack: 'Rust, Tauri, Python',
+    description: 'Portable-окно отправки файлов в Telegram в эстетике печатной накладной',
+    links: [
+      { label: 'Доки (RU)', href: 'https://ooodnakov.github.io/voice-drop/ru/' },
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/voice-drop' },
+    ],
+  },
+  {
+    name: 'alioss',
+    stack: 'Kotlin, Jetpack Compose',
+    description: 'Офлайн-игра Alias для Android без рекламы, аккаунтов и трекеров',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/alioss' },
+      { label: 'Релизы', href: 'https://github.com/ooodnakov/alioss/releases/latest' },
+    ],
+  },
+  {
+    name: 'alioss-site',
+    stack: 'TypeScript, Next.js',
+    description: 'Портал и галерея колод для Alioss',
+    links: [{ label: 'GitHub', href: 'https://github.com/ooodnakov/alioss-site' }],
+  },
+  {
+    name: 'minecraft_modpacks_translations',
+    stack: 'Python',
+    description: 'Переводы квестов в модпаках Minecraft (Cube Warper 1.13)',
+    links: [{ label: 'GitHub', href: 'https://github.com/ooodnakov/minecraft_modpacks_translations' }],
+  },
+]
+
+const academicResearch = [
+  {
+    name: 'dtsne_jedi',
+    stack: 'Python, Jupyter',
+    description:
+      'Алгоритмы dtSNE и JEDI для курса ML 2023 в Сколтехе (pip install dtsnejedi, архивный)',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ooodnakov/dtsne_jedi' },
+      { label: 'PyPI', href: 'https://pypi.org/project/dtsnejedi/' },
+    ],
+  },
+  {
+    name: 'GMP_TTA',
+    stack: 'Python, Jupyter',
+    description:
+      'Код дипломной работы: Enhancing Semantic Segmentation of LiDAR Point Clouds through Global Maps',
+    links: [{ label: 'GitHub', href: 'https://github.com/ooodnakov/GMP_TTA' }],
+  },
+]
+</script>
+
 # Проекты и документация
 
 Каталог открытых репозиториев и сайтов [`@ooodnakov`](https://github.com/ooodnakov).
 
 ## Сайты и документация на GitHub Pages
 
-| Проект | Описание | Ссылки |
-|---|---|---|
-| **VoiceDrop** | Portable-утилита отправки файлов в Telegram (Rust + Tauri + Telethon): голосовые, кружочки и документы | [Доки (RU)](https://ooodnakov.github.io/voice-drop/ru/) · [Docs (EN)](https://ooodnakov.github.io/voice-drop/) · [GitHub](https://github.com/ooodnakov/voice-drop) · [Релизы](https://github.com/ooodnakov/voice-drop/releases/latest) |
-| **windowping** | Демон и CLI на чистом Python 3.11+ (stdlib) для автоматического старта 5-часовых окон лимитов в Codex, Command Code, GLM, Claude Code, Kimi и MiniMax | [Доки](https://ooodnakov.github.io/windowping/) · [GitHub](https://github.com/ooodnakov/windowping) · [PyPI](https://pypi.org/project/windowping/) |
-| **zsh-fzf-unified** | Единый плагин zsh для всех поверхностей fzf: `Ctrl-R`, `Ctrl-T`, `Alt-C`, `Ctrl-G` ripgrep, `fzf-tab` и гибридные стрелки | [Доки](https://ooodnakov.github.io/zsh-fzf-unified/) · [GitHub](https://github.com/ooodnakov/zsh-fzf-unified) |
-| **ooodnakov-config** | Воспроизводимые dotfiles для Linux, Windows и macOS с единым CLI `oooconf` (`o`) | [Доки](https://ooodnakov.github.io/ooodnakov-config/) · [GitHub](https://github.com/ooodnakov/ooodnakov-config) |
-| **my_website** | Личный сайт и резюме | [dnakov.ooo](https://dnakov.ooo) · [GitHub](https://github.com/ooodnakov/my_website) |
+<RepoGrid :items="hostedDocs" />
 
 ## AI-инструменты и автоматизация
 
-| Проект | Стек | Описание | Ссылки |
-|---|---|---|---|
-| **windowping** | Python | Менеджер 5-часовых окон с live-карточкой в Telegram, тихими часами, статистикой, `doctor` и `systemd`-watchdog | [Доки](https://ooodnakov.github.io/windowping/) · [GitHub](https://github.com/ooodnakov/windowping) |
-| **dndtranscribe** | Python | Локальная транскрибация русской речи и диаризация для записей настольных сессий (Whisper, sherpa-onnx, pyannote, LM Studio) | [GitHub](https://github.com/ooodnakov/dndtranscribe) |
-| **telegram_meme_autoposter** | Python, TypeScript | Агрегация медиа из Telegram-каналов, дедупликация, водяные знаки, админ-панель (FastAPI + React SPA) и отложенный постинг | [GitHub](https://github.com/ooodnakov/telegram_meme_autoposter) · [Wiki](https://github.com/ooodnakov/telegram_meme_autoposter/wiki) |
+<RepoGrid :items="aiTools" />
 
 ## Dotfiles и терминальные плагины
 
-| Проект | Стек | Описание | Ссылки |
-|---|---|---|---|
-| **ooodnakov-config** | Python, Shell | Воспроизводимые dotfiles для Linux, Windows и macOS с единым CLI `oooconf` (`o`) | [Доки](https://ooodnakov.github.io/ooodnakov-config/) · [GitHub](https://github.com/ooodnakov/ooodnakov-config) |
-| **zsh-fzf-unified** | Shell | Единый zsh-плагин для fzf, заменяющий `zsh-fzf-history-search`, отдельный `fzf-tab` и ручные биндинги `fzf --zsh` | [Доки](https://ooodnakov.github.io/zsh-fzf-unified/) · [GitHub](https://github.com/ooodnakov/zsh-fzf-unified) |
-| **noctalia-handy** | Luau | Интеграция офлайн speech-to-text Handy в панель Noctalia: статус, диктовка, история и выбор моделей | [GitHub](https://github.com/ooodnakov/noctalia-handy) · [Релизы](https://github.com/ooodnakov/noctalia-handy/releases/latest) |
-| **omz.yazi** | Lua | Отображение актуального промпта Oh My Zsh в шапке Yazi | [GitHub](https://github.com/ooodnakov/omz.yazi) · [Релизы](https://github.com/ooodnakov/omz.yazi/releases/latest) |
+<RepoGrid :items="dotfilesPlugins" />
 
 ## Приложения, игры и комьюнити
 
-| Проект | Стек | Описание | Ссылки |
-|---|---|---|---|
-| **voice-drop** | Rust, Tauri, Python | Portable-окно отправки файлов в Telegram в эстетике печатной накладной | [Доки (RU)](https://ooodnakov.github.io/voice-drop/ru/) · [GitHub](https://github.com/ooodnakov/voice-drop) |
-| **alioss** | Kotlin, Jetpack Compose | Офлайн-игра Alias для Android без рекламы, аккаунтов и трекеров | [GitHub](https://github.com/ooodnakov/alioss) · [Релизы](https://github.com/ooodnakov/alioss/releases/latest) |
-| **alioss-site** | TypeScript, Next.js | Портал и галерея колод для Alioss | [GitHub](https://github.com/ooodnakov/alioss-site) |
-| **minecraft_modpacks_translations** | Python | Переводы квестов в модпаках Minecraft (Cube Warper 1.13) | [GitHub](https://github.com/ooodnakov/minecraft_modpacks_translations) |
+<RepoGrid :items="appsGames" />
 
 ## Исследования и учёба
 
-| Проект | Стек | Описание | Ссылки |
-|---|---|---|---|
-| **dtsne_jedi** | Python, Jupyter | Алгоритмы dtSNE и JEDI для курса ML 2023 в Сколтехе (`pip install dtsnejedi`, архивный) | [GitHub](https://github.com/ooodnakov/dtsne_jedi) · [PyPI](https://pypi.org/project/dtsnejedi/) |
-| **GMP_TTA** | Python, Jupyter | Код дипломной работы: Enhancing Semantic Segmentation of LiDAR Point Clouds through Global Maps | [GitHub](https://github.com/ooodnakov/GMP_TTA) |
+<RepoGrid :items="academicResearch" />
