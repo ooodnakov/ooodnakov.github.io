@@ -5,9 +5,6 @@ hero:
   name: ooodnakov
   text: Документация и проекты
   tagline: AI-инструменты, плагины для терминала, десктопные утилиты и автоматизация.
-  image:
-    src: /logo.svg
-    alt: ooodnakov
   actions:
     - theme: brand
       text: Все проекты

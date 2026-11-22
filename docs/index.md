@@ -5,9 +5,6 @@ hero:
   name: ooodnakov
   text: Open-Source Docs & Tools
   tagline: Risk analysis, AI tooling, terminal plugins, and homelab automation.
-  image:
-    src: /logo.svg
-    alt: ooodnakov
   actions:
     - theme: brand
       text: Browse Projects
